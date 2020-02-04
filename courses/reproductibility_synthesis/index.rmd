@@ -14,7 +14,7 @@ output:
 
 ## Contexte
 
-![](assets/five_w.jpg){width=60%}
+![](assets/5W.jpeg){width=60%}
 
 ## C'est quoi ? 
 <br/>
@@ -37,8 +37,6 @@ données + méta-données + matériel & méthodes
 
 Un article publié n'est que le sommet de l'iceberg que représente le processus de recherche.
 
-<br/>
-
 > - <span class="green">Data Management:</span> sauvegarde des données brutes et intermédiaires, tout documenter
 pas, créer des données bien rangées pouvant être analysées
 
@@ -55,6 +53,14 @@ découverte et compréhension
 minimise la fusion manuelle des conflits
 
 <span class="reference">Wilson et al. 2016. Plos Comp Biol. https://arxiv.org/pdf/1609.00037.pdf</span>
+
+## Comment ?
+
+![Guide to reproductible code](assets/evolution_guide_to.jpg){width=20%}
+
+https://www.britishecologicalsociety.org/publications/guides-to/
+
+https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf
 
 ## <span class="green">Data Management</span>
 
@@ -185,6 +191,10 @@ Utiliser la programmation lettrée (literate programming)
 
 Rmarkdown (https://rmarkdown.rstudio.com/)
 
+![](assets/rmarkown.png)
+
+## <span class="green">Manuscripts</span>
+
 ![](assets/rmarkdown.png)
 
 ## <span class="green">Manuscripts</span>
@@ -198,14 +208,32 @@ Comment ça marche Rmarkdown ?
 
 En markdown le texte est formaté en utilisant des balises très simples comme les _ ou les *
 
+Aide mémoire très détaillée : https://nicolascasajus.fr/mastering-markdown/#1
+
 ## <span class="green">Manuscripts</span>
 
 Formats d'export de Rmarkdown (pandoc)
 
 ![](assets/rmarkdown_formats.png){width=50%}
 
+## <span class="green">Manuscripts</span>
+
+Pensez également aux graphs et figure ! 
+
+https://www.data-to-viz.com/
+
+![](assets/datatoviz.png){width=50%}
+
+Yann Holtz & Conor Healy, 2018
+
 
 # Versioning your code
+
+## Introduction à Git 
+
+
+
+
 
 # Research compendium
 
