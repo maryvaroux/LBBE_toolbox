@@ -1,0 +1,221 @@
+---
+title: "Introduction à la <br/> recherche reproductible  <br/> <br/>"
+author: "Mary Varoux <br/> <br/> LBBE <br/>"
+date: "04/02/2020 - Séminaire étudiant <br/><br/><br/><span class='caption'>mary.varoux@univ-lyon1.fr <br/> https://github.com/maryvaroux </span>"
+output:
+  revealjs::revealjs_presentation:
+    theme: night
+    center: true
+    transition: slide
+    css: assets/custom.css
+---
+
+# Open Science
+
+## Contexte
+
+![](assets/five_w.jpg){width=60%}
+
+## C'est quoi ? 
+<br/>
+<span class="green";bold">Recherche reproductible </span>
+<br/>
+
+données + méta-données + matériel & méthodes
+
+## Pourquoi on en parle ?
+
+![](assets/natureCapture.png){width=80%}
+
+## Pourquoi on en parle ?
+
+![](assets/ferric_fig.png){width=60%}
+
+<span class="reference">Ferric C. Fang, and Arturo Casadevall Infect. Immun. 2011;79:3855-3859</span>
+
+## Comment ?
+
+Un article publié n'est que le sommet de l'iceberg que représente le processus de recherche.
+
+<br/>
+
+> - <span class="green">Data Management:</span> sauvegarde des données brutes et intermédiaires, tout documenter
+pas, créer des données bien rangées pouvant être analysées
+
+> - <span class="green">Software:</span> écrire, organiser et partager ses scripts et programmes utilisés dans l'analyse
+
+> - <span class="green">Tracking Changes:</span> répertorier la façon dont les divers composants de votre projet changent dans le temps
+
+> - <span class="green">Collaboration:</span> faciliter la compréhension des collaborateurs existants et nouveaux, et contribuer à un projet
+
+> - <span class="green">Project Organization:</span> organiser les artefacts numériques d'un projet pour faciliter
+découverte et compréhension
+
+> - <span class="green">Manuscripts:</span> écrire des manuscrits d'une manière qui laisse une piste d'audit et
+minimise la fusion manuelle des conflits
+
+<span class="reference">Wilson et al. 2016. Plos Comp Biol. https://arxiv.org/pdf/1609.00037.pdf</span>
+
+## <span class="green">Data Management</span>
+
+<br/>
+
+> - Sauvegarder les données initiales en l'état (ne pas les modifier) et les mettre en lecture seule si possible
+
+<br/>
+
+> - Scripter l'acquisition des données au maximum (API), surtout si elles sont volumineuses (ne plus cliquer mais coder)
+
+<br/>
+
+> - Toute transformation sera scriptée = devient un résultat (80% du job)
+
+<br/>
+
+> - Générer les données que vous voudriez recevoir, pouvant être lues par tous (noms de colonnes explicites, en anglais, conventions, tidy)
+
+
+## <span class="green">Software</span>
+
+Le code, les scripts
+
+> - Respecter au maximum les conventions de code de votre communauté, https://style.tidyverse.org/ (stylisation du code très détaillée) et peu importe la convention adoptée, rester constant !
+
+<br/>
+
+> - Chemins relatifs ! Toujours ! (Répertoire de projet R à privilégier)
+
+<br/>
+
+> - Pas d'espaces, d'accents dans les noms !
+
+<br/>
+
+> - Commenter/documenter les fonctions, les scripts (pensez à vous même dans 6 mois)
+
+## <span class="green">Software</span>
+
+L'environnement logiciel.
+
+<br/>
+
+> - Les packages (version) : packrat (noms des fonction peuvent changer, sauvegarder le package dans la version utilisée)
+
+<br/>
+
+> - Bibliothèques système, de la version de R, de la version de l'OS ?!
+
+<br/>
+
+> - Docker (Rocker pour R), permet de créer une image de l'environnement de travail (OS, bibliothèques, R, packages) (https://colinfay.me/docker-r-reproducibility/ ; https://journal.r-project.org/archive/2017/RJ-2017-065/RJ-2017-065.pdf)
+
+## <span class="green">Software</span>
+
+Le "workflow" (echaînement des scripts, des logiciels).
+
+D'une manière générale automatiser au maximum
+
+![](https://imgs.xkcd.com/comics/automation.png)
+
+## <span class="green">Software</span>
+
+> - il existe des outils pour ça (pseudo makefile en R, makefile shell, pipeline toolkits [Remake, Drake])
+
+<br/>
+
+> - Automatiser du script à la rédaction de l'article (Rmarkdown)
+
+<br/>
+
+> - Gère tout seul les dépendances entre scripts et données car cela est automatisé (le summum hein)
+
+
+## <span class="green">Tracking Changes</span>
+
+Utiliser un logiciel de gestion de versions (Git)
+
+![](https://imgs.xkcd.com/comics/git.png)
+
+
+## <span class="green">Collaboration</span>
+
+<br/>
+
+> - Conventions de code (variable sans majuscule, sans espace..)
+
+<br/>
+
+> - Documentaiton de l'archive de recherche (Readme, License, code de contribution, avoir tout au même endroit c'est mieux : research compendium)
+
+<br/>
+
+> - Plateforme de collaboration en ligne (intègre Git !) : github, gitlab
+
+## <span class="green">Project Organization</span>
+
+<br/>
+
+![](assets/nat_com.png)
+
+## <span class="green">Project Organization</span>
+
+<br/>
+
+> - Research compendium : organisation du répertoire de travail
+
+<br/>
+
+> - Pipeline toolkit (Drake) : gère les dépendances entre données, scripts et résultats (summum de l'Open Science mais nécessite une habitude de coder en fonction)
+
+
+## <span class="green">Manuscripts</span>
+
+<br/>
+
+Utiliser la programmation lettrée (literate programming)
+
+<br/>
+
+<blockquote> au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.
+</blockquote>
+
+<span class="reference">Donald Knuth, années 70</span>
+
+## <span class="green">Manuscripts</span>
+
+Rmarkdown (https://rmarkdown.rstudio.com/)
+
+![](assets/rmarkdown.png)
+
+## <span class="green">Manuscripts</span>
+
+<br/>
+<br/>
+
+Comment ça marche Rmarkdown ?
+
+![](assets/rmarkdownflow.png)
+
+En markdown le texte est formaté en utilisant des balises très simples comme les _ ou les *
+
+## <span class="green">Manuscripts</span>
+
+Formats d'export de Rmarkdown (pandoc)
+
+![](assets/rmarkdown_formats.png){width=50%}
+
+
+# Versioning your code
+
+# Research compendium
+
+# Acquisition des données et webscraping
+
+# Tidyverse et autres packages trop cools
+
+# Les données spatiales
+
+
+
+
+
