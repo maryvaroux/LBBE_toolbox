@@ -218,6 +218,16 @@ Formats d'export de Rmarkdown (pandoc)
 
 ## <span class="green">Manuscripts</span>
 
+Faire ses slides avec Rmarkdown
+
+https://arm.rbind.io/slides/xaringan.html#1
+
+https://rmarkdown.rstudio.com/lesson-11.html
+
+![](assets/slides.png){width=50%}
+
+## <span class="green">Manuscripts</span>
+
 Pensez également aux graphs et figure ! 
 
 https://www.data-to-viz.com/
@@ -226,14 +236,19 @@ https://www.data-to-viz.com/
 
 Yann Holtz & Conor Healy, 2018
 
-
 # Versioning your code
 
 ## Introduction à Git 
 
+![](assets/confucius.jpg){width=50%}
 
+## Introduction à Git 
 
+Suivre les changements dans un projet : 
 
+> - Collecte de données: ** Carnet de laboratoire **
+> - Analyse des données: ** Versioning **
+> - Rédaction d'article: ** Versioning **
 
 # Research compendium
 
