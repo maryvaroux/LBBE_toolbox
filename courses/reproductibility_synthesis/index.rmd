@@ -14,7 +14,7 @@ output:
 
 ## Contexte
 
-![](assets/5W.jpeg){width=60%}
+![](assets/01_open_science/5W.jpeg){width=60%}
 
 ## C'est quoi ? 
 <br/>
@@ -25,11 +25,11 @@ données + méta-données + matériel & méthodes
 
 ## Pourquoi on en parle ?
 
-![](assets/natureCapture.png){width=80%}
+![](assets/01_open_science/natureCapture.png){width=80%}
 
 ## Pourquoi on en parle ?
 
-![](assets/ferric_fig.png){width=60%}
+![](assets/01_open_science/ferric_fig.png){width=60%}
 
 <span class="reference">Ferric C. Fang, and Arturo Casadevall Infect. Immun. 2011;79:3855-3859</span>
 
@@ -56,7 +56,7 @@ minimise la fusion manuelle des conflits
 
 ## Comment ?
 
-![Guide to reproductible code](assets/evolution_guide_to.jpg){width=20%}
+![Guide to reproductible code](assets/01_open_science/evolution_guide_to.jpg){width=20%}
 
 https://www.britishecologicalsociety.org/publications/guides-to/
 
@@ -161,7 +161,7 @@ Utiliser un logiciel de gestion de versions (Git)
 
 <br/>
 
-![](assets/nat_com.png)
+![](assets/01_open_science/nat_com.png)
 
 ## <span class="green">Project Organization</span>
 
@@ -191,11 +191,11 @@ Utiliser la programmation lettrée (literate programming)
 
 Rmarkdown (https://rmarkdown.rstudio.com/)
 
-![](assets/rmarkown.png)
+![](assets/01_open_science/rmarkown.png)
 
 ## <span class="green">Manuscripts</span>
 
-![](assets/rmarkdown.png)
+![](assets/01_open_science/rmarkdown.png)
 
 ## <span class="green">Manuscripts</span>
 
@@ -204,7 +204,7 @@ Rmarkdown (https://rmarkdown.rstudio.com/)
 
 Comment ça marche Rmarkdown ?
 
-![](assets/rmarkdownflow.png)
+![](assets/01_open_science/rmarkdownflow.png)
 
 En markdown le texte est formaté en utilisant des balises très simples comme les _ ou les *
 
@@ -214,7 +214,7 @@ Aide mémoire très détaillée : https://nicolascasajus.fr/mastering-markdown/#
 
 Formats d'export de Rmarkdown (pandoc)
 
-![](assets/rmarkdown_formats.png){width=50%}
+![](assets/01_open_science/rmarkdown_formats.png){width=50%}
 
 ## <span class="green">Manuscripts</span>
 
@@ -224,15 +224,15 @@ https://arm.rbind.io/slides/xaringan.html#1
 
 https://rmarkdown.rstudio.com/lesson-11.html
 
-![](assets/slides.png){width=50%}
+![](assets/01_open_science/slides.png){width=50%}
 
 ## <span class="green">Manuscripts</span>
 
-Pensez également aux graphs et figure ! 
+Pensez également aux graphs et figures ! 
 
 https://www.data-to-viz.com/
 
-![](assets/datatoviz.png){width=50%}
+![](assets/01_open_science/datatoviz.png){width=50%}
 
 Yann Holtz & Conor Healy, 2018
 
@@ -240,23 +240,205 @@ Yann Holtz & Conor Healy, 2018
 
 ## Introduction à Git 
 
-![](assets/confucius.jpg){width=50%}
+![](assets/02_versioning/confucius.jpg){width=50%}
+
+## Introduction à Git 
+
+https://github.com/ewenme/ghibli
+
+![](https://static.lpnt.fr/images/2018/06/15/15292628lpw-15292773-article-jpg_5326796_980x426.jpg){width=50%}
 
 ## Introduction à Git 
 
 Suivre les changements dans un projet : 
 
-> - Collecte de données: ** Carnet de laboratoire **
-> - Analyse des données: ** Versioning **
-> - Rédaction d'article: ** Versioning **
+> - Collecte de données: <span class="green">"Carnet de laboratoire"</span>
+> - Analyse des données: <span class="green">Versioning</span>
+> - Rédaction d'article: <span class="green">Versioning</span>
+
+## Introduction à Git 
+
+Il existe de nombreux outils pour le suivi de version, `git` est un des plus utilisés. Il prends des **snapshot** (commits) de l'avancement de votre projet et permet de :
+
+> - Archiver et avoir un historique des changements
+> - Faire des retour en arrière
+> - Avoir différentes versions (branches)
+> - Développement collaboratif
+
+## Introduction à Git  
+
+Quelques définitions :
+
+> - **Repository/Dépôt**: un répertoire comprenant un répertoire `.git` (dossier caché)
+> - **Commit**: un instantané du répertoire (une date, un auteur, une description, un commit parenté *t-1*)
+> - **Dossier de travail**: une version des fichiers du référentiel sur votre ordinateur
+> - **Index**: un espace temporaire incluant les modifications à engager
+
+## Starting with git 
+
+Toutes les commandes suivent le même pattern :
+
+`git commande texte`
+
+> - `mkir nom_dossier` créer un répertoire  dans l'ordinateur 
+> -  `git init`  créer un répertoire git
+> - `git status` checker le statut du répertoire
+> - `git add fichier` ajouter un fichier sous contrôle de version
+> - `git commit -a -m "message informatif"` prendre un instantannée (-a = all, faire le même commit pour tous les fichier)
+> - `git log` voir l'historique des commit
+> - `git show identifiant du commit` voir ancienne version d'un fichier
+
+## Configuration de git 
+
+`git config global -- "adresse mail"`
+`git config user "Prénom Nom"`
+
+Quelques tuto : 
+
+> - https://informatique-mia.inrae.fr/r4ciam/sites/default/files/download/tutoriels/UtilisationGit13mai.pdf
+> - https://www.atlassian.com/git/tutorials/install-git
+> - https://cfss.uchicago.edu/setup/git/
+> - https://cfss.uchicago.edu/setup/git-with-rstudio/
+> - http://r-pkgs.had.co.nz/git.html
+
+## Les 3 espaces de git 
+
+
+> - <span class="green">Working directory</span> : dossier de travail avec les fichiers
+> - <span class="green">Commit graph</span>: dépôt/espace de stockage des commits
+> - <span class="green">Index</span>: espace entre les deux, fichiers indexés mais pas encore "pushés"
+
+
+## Déplacement dans ces 3 espaces de travail
+
+> - `git add` ajouter les modifications à l'index
+> - `git commit` construire un commit dans l'index
+> - `git diff` montre les différences entre le fichier dans le working directory et l'index
+> - `git checkout` mets à jour le working directory avec le répertoire
+> - `git reset HEAD` retire le dernier changement fait à l'index
+
+## Utiliser un serveur distant : Github ou Gitlab
+
+Pourquoi utiliser un serveur distant:
+
+> - Une sauvegarde de votre référentiel
+> - Travailler avec les autres
+> - Augmentez votre visibilité
+> - Augmentez les interactions avec les utilisateurs
+> - Distribution facile des versions devel
+
+## Travailler avec un serveur distant 
+
+> - `git clone URL` créer une copie indépendante du répertoire
+> - `git pull` récupérer le contenu distant
+> - `git push` déposer les modifications locales sur le répertoire distant
+
+## Travailler avec un serveur distant 
+
+Toujour puller avant de pusher, pour avoir toujours la dernière version ! 
+
+Organisation et communication pour éviter les conflit de commits
+
+![](https://media.giphy.com/media/XyWnE5KFItY1q/giphy.gif)
+
+## Commit graph et branches
+
+- La principale caractéristique des branches est de permettre de basculer entre les différentes versions très facilement
+- Une branche doit correspondre à un sujet, par ex. une correction de bug, une nouvelle fonctionnalité, etc.
+- Particulièrement utile lorsque vous ne savez pas quand / si certaines modifications seront incluses (c'est-à-dire très souvent)
+- Il permet plusieurs processus de développement simultanés
+
+## Comprendre les branches
+
+https://leargitbranching.js.org/
+
+## Contrôle de version
+
+Un bon résumé des commandes `git` :
+
+https://github.github.com/training-kit/downloads/fr/github-git-cheat-sheet.pdf
+
+
+Cette partie est fortement inspirée de la formation de Philippe Veber (LBBE) et de Stéphane Dray (LBBE)
+
 
 # Research compendium
+
+## Research compendium
+
+Où comment bien ranger sa chambre pour retrouver ses jouets
+
+## Késako 
+
+- Un receuil qui synthétise de manière exhaustive votre projet d'analyse de données
+
+- Quelques règles simples pour organiser son répertoire de travail
+
+- Et pouvoir s'y retrouver et que les autres s'y retrouvent (ou soi même dans 6 mois, 1an)
+
+- Aujourd'hui on partage son code, ses données, ses résultats avec ses encadrants, collègues ou le reste du monde
+
+- Autant se préparer depuis le début plutôt que de devoir tout refaire ou risquer la honte internationale !
+
+## Principes
+
+> - Adopter les conventions du domaine (e.g. en anglais, sans accent, sans espace, sans majuscule)
+> - Séparer les répertoires de projet 
+>  - **data** : input, données brutes (on ne les modifie jamais!)
+>  - **scripts** : la méthode, les fichiers R que l'on écrit
+>  - **results** : les figures, les données modifiées
+>  - **(docs)** : documentation liée au projet
+>  - **(manuscripts)** : articles, thèses, mémoire
+
+![](assets/03_research_compendium/comp_1.png)
+
+## Principes
+
+- Les flux d'analyse sont séparés en étapes courtes et homogènes
+- Un script = une étape
+- Sourcer les fichier et nettoyer l'espace de travail régulièrement (`rm(list=ls())`) 
+
+## Principes
+
+- Numéroter les scripts et placez des entêtes
+
+![](assets/03_research_compendium/comp_2.png){width=20%}
+![](assets/03_research_compendium/comp_3.png){width=50%}
+
+## Principes
+
+- Utiliser un script maître à la racine
+
+![](assets/03_research_compendium/comp_4.png){width=20%}
+![](assets/03_research_compendium/comp_make.png){width=50%}
+
+## Principes
+
+- Tous les scripts tournent à partir de la racine du projet (`setwd`est banni, sinon au bûcher)
+- Chaque script est associé à un répértoire de résultat qui porte le nom du script
+
+![](assets/03_research_compendium/comp_5.png){width=50%}
+
+## Principes
+
+- `00_setup.R` : permet de faire tourner toutes les librairies (packages) nécessaire
+- Placer des entêtes
+- Créer automatiques des dossiers pour chaques codes R
+- Utiliser les file paths
+- Placer un README à la racine du projet
+
+## Références
+
+- Marwick B, Boettiger C, Mullen L. 2018. Packaging data analytical work reproducibly using R (and friends). PeerJ Preprints 6:e3192v2 https://doi.org/10.7287/peerj.preprints.3192v2
+- https://research-compendium.science/
+- https://zenodo.org/communities/research-compendium/about/
+- https://github.com/cboettig/template (structure de package)
+- https://github.com/benmarwick/rrtools (structure de apckage + intégration docker !!)
 
 # Acquisition des données et webscraping
 
 # Tidyverse et autres packages trop cools
 
-# Les données spatiales
 
 
 
