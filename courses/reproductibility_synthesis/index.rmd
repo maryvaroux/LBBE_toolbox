@@ -304,6 +304,8 @@ Quelques tuto :
 > - https://cfss.uchicago.edu/setup/git-with-rstudio/
 > - http://r-pkgs.had.co.nz/git.html
 
+Soignez ses commits avec des messages courts mais explicite (et des [émojis](https://www.webfx.com/tools/emoji-cheat-sheet/))
+
 ## Les 3 espaces de git 
 
 
@@ -515,7 +517,7 @@ Cette partie est complètement copiée sur celle de François Guilhaumon (Dec 20
 * [Apprendre le tidyverse](https://www.tidyverse.org/learn/): livre, workshops et cours en ligne
 
 
-* My selection of books:
+* Quelques livres :
    - [R for Data Science](https://r4ds.had.co.nz/) et [Advanced R](http://adv-r.had.co.nz/)
    - [Introduction à R et au tidyverse](https://juba.github.io/tidyverse/)
    - [Fundamentals of Data visualization](https://serialmentor.com/dataviz/)
