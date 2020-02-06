@@ -208,7 +208,10 @@ Comment ça marche Rmarkdown ?
 
 En markdown le texte est formaté en utilisant des balises très simples comme les _ ou les *
 
-Aide mémoire très détaillée : https://nicolascasajus.fr/mastering-markdown/#1
+Aides mémoires très détaillées : 
+
+- https://nicolascasajus.fr/mastering-markdown/#1
+- https://bookdown.org/yihui/rmarkdown/
 
 ## <span class="green">Manuscripts</span>
 
@@ -220,7 +223,7 @@ Formats d'export de Rmarkdown (pandoc)
 
 Faire ses slides avec Rmarkdown
 
-https://arm.rbind.io/slides/xaringan.html#1
+Package xaringan : https://arm.rbind.io/slides/xaringan.html#1
 
 https://rmarkdown.rstudio.com/lesson-11.html
 
@@ -410,14 +413,14 @@ Où comment bien ranger sa chambre pour retrouver ses jouets
 - Utiliser un script maître à la racine
 
 ![](assets/03_research_compendium/comp_4.png){width=20%}
-![](assets/03_research_compendium/comp_make.png){width=50%}
+![](assets/03_research_compendium/comp_make.png){width=20%}
 
 ## Principes
 
 - Tous les scripts tournent à partir de la racine du projet (`setwd`est banni, sinon au bûcher)
 - Chaque script est associé à un répértoire de résultat qui porte le nom du script
 
-![](assets/03_research_compendium/comp_5.png){width=50%}
+![](assets/03_research_compendium/comp_5.png){width=20%}
 
 ## Principes
 
@@ -427,6 +430,21 @@ Où comment bien ranger sa chambre pour retrouver ses jouets
 - Utiliser les file paths
 - Placer un README à la racine du projet
 
+## Principes
+
+- On spécifie l'environnement de calcul qui a été utilisé pour l'analyse d'origine
+- Fichier en texte brut qui comprend une courte liste des noms et des numéros de version du logiciel et d'autres outils essentiels utilisés pour l'analyse
+
+## Diffusion / stockage
+
+- Il existe de nombreuses plateformes pour stocker votre supp. mat.
+
+- La plupat sont propriétaires/privées et/ou payantes (e.g. Dryad, https://datadryad.org/)
+
+- Il existe Zenodo (https://zenodo.org/) : Il a été créé par OpenAIRE et le CERN pour fournir aux chercheurs un lieu pour déposer des ensembles de données. Il a été lancé en 2013, permettant à des chercheurs de télécharger des fichiers jusqu'à 50 GO.
+
+- Lorsqu'on dépose un truc sur Zenodo cela **génère un DOI**. Ainsi notre research compendium peut être citable !
+
 ## Références
 
 - Marwick B, Boettiger C, Mullen L. 2018. Packaging data analytical work reproducibly using R (and friends). PeerJ Preprints 6:e3192v2 https://doi.org/10.7287/peerj.preprints.3192v2
@@ -435,9 +453,113 @@ Où comment bien ranger sa chambre pour retrouver ses jouets
 - https://github.com/cboettig/template (structure de package)
 - https://github.com/benmarwick/rrtools (structure de apckage + intégration docker !!)
 
+Cette partie est complètement copiée sur celle de François Guilhaumon (Dec 2019)
+
+# Tidyverse
+
+## Tidykoi ? 
+
+- *Tidy* "bien rangé" et *verse* "univers"
+
+![](assets/04_tidyverse/tidyverse-banner.png){width=70%}
+
+## Tidykoi ? 
+
+- *Tidy* "bien rangé" et *verse* "univers"
+- C'est avant tout une collection de packages R développés par H. Wickham et d'autres de Rstudio
+
+![](https://thinkr.fr/wp-content/uploads/2019/07/meme-shiny-r.jpg){width=60%}
+
+
+## Tidyverse
+
+- [`ggplot2` - visualising stuff](https://ggplot2.tidyverse.org/)
+
+- [`dplyr`, `tidyr` - data manipulation](https://dplyr.tidyverse.org/)
+
+- `purrr` - advanced programming
+
+- [`readr` - import data](https://readr.tidyverse.org/)
+
+- [`tibble` - improved data.frame format](https://tibble.tidyverse.org/)
+
+- [`forcats` - working w/ factors](https://forcats.tidyverse.org/)
+
+- [`stringr` - working w/ chain of characters](https://stringr.tidyverse.org/)
+
+## Workflow avec Tidyverse
+
+![](assets/04_tidyverse/data-science-workflow.png){width=60%}
+
+## Workflow avec Tidyverse
+
+![](assets/04_tidyverse/01_tidyverse_data_science.png){width=80%}
+
+
+## Le pipe
+
+[Du blog de Lise Vaudor](http://perso.ens-lyon.fr/lise.vaudor/)
+
+![](assets/04_tidyverse/piping_successive.jpg){width=60%}
+
+## Le pipe
+
+[Du blog de Lise Vaudor](http://perso.ens-lyon.fr/lise.vaudor/)
+
+![](assets/04_tidyverse/piping_piped.png){width=40%}
+
+## Pour aller plus loin
+
+* [How to switch from base R to tidyverse?](https://www.significantdigits.org/2017/10/switching-from-base-r-to-tidyverse/)
+
+* [Apprendre le tidyverse](https://www.tidyverse.org/learn/): livre, workshops et cours en ligne
+
+
+* My selection of books:
+   - [R for Data Science](https://r4ds.had.co.nz/) et [Advanced R](http://adv-r.had.co.nz/)
+   - [Introduction à R et au tidyverse](https://juba.github.io/tidyverse/)
+   - [Fundamentals of Data visualization](https://serialmentor.com/dataviz/)
+   - [Data Visualization: A practical introduction](http://socviz.co/)
+
+* [Tidy Tuesdays videos](https://www.youtube.com/user/safe4democracy/videos) by D. Robinson chief data scientist at DataCamp
+
+## Pour aller plus loin
+
+* Material of the [2-day workshop Data Science in the tidyverse](https://github.com/cwickham/data-science-in-tidyverse) held at the RStudio 2019 conference
+
+
+* Material of the stat545 course on [Data wrangling, exploration, and analysis with R](https://stat545.com/) at the University of British Columbia
+
+
+* List of best R packages (with their description) on [data import, wrangling and visualization](https://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html)
+
+## Pour aller plus loin
+
+* [How to switch from base R to tidyverse?](https://www.significantdigits.org/2017/10/switching-from-base-r-to-tidyverse/)
+
+![](assets/04_tidyverse/switch_baseR_tidyverse.png){width=100%}
+
 # Acquisition des données et webscraping
 
-# Tidyverse et autres packages trop cools
+## Acquisition des données et webscraping
+
+> - API : `{taxize}`,`{rfishbase}`, OpenStreetMap, Flickr...
+
+![](assets/05_API/api.png){width=100%}
+
+## Acquisition des données et webscraping
+
+> - API : `{taxize}`,`{rfishbase}`, OpenStreetMap, Flickr...
+> - Construction d'un client R
+> - Pour aller plus loin : [rOpenSci](https://ropensci.org/), [Open Data](https://github.com/collections/open-data)
+
+## Des questions ?
+
+![](assets/05_API/memerstudio.jpg){width=50%}
+
+Merci de votre attention
+
+
 
 
 
