@@ -5,7 +5,6 @@
 #
 # [...]
 #
-# francois.guilhaumon@ird.fr
 #################################################
 
 #source(file.path("R","00_setup.R"))

@@ -1,11 +1,18 @@
 #################################################
+# 
+# 
+#    __  ___                                       ___          
+#   /  |/  /_ __  _______  __ _  ___  ___ ___  ___/ (_)_ ____ _ 
+#  / /|_/ / // / / __/ _ \/  ' \/ _ \/ -_) _ \/ _  / / // /  ' \
+# /_/  /_/\_, /  \__/\___/_/_/_/ .__/\__/_//_/\_,_/_/\_,_/_/_/_/
+#        /___/                /_/                               
+#   
 # My Compendium
 #
 # 00_setup.R
 #
 # libraries and global variables
 #
-# francois.guilhaumon@ird.fr
 #################################################
 
 #################################################
@@ -14,7 +21,7 @@
 #
 #################################################
 
-#CRAN packages vector
+#Create CRAN packages vector
 cran_packages <- c(
   "devtools",
   "parallel",
@@ -24,9 +31,9 @@ cran_packages <- c(
   "ggplot2"
 )
 
-n_i_p <- cran_packages[!(cran_packages %in% installed.packages())]
+n_i_p <- cran_packages[!(cran_packages %in% installed.packages())] # install package only if they aren't installed yet
 
-lapply(n_i_p, install.packages, dependencies = TRUE)
+lapply(n_i_p, install.packages, dependencies = TRUE) # install packages
 
 #NON CRAN packages
 if (!("emo" %in% installed.packages())) {

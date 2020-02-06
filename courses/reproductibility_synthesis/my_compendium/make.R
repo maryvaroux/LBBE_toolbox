@@ -4,7 +4,6 @@
 #
 # make.R
 #
-# francois.guilhaumon@ird.fr
 #################################################
 
 ##################
@@ -20,7 +19,7 @@ source("R/00_setup.R")
 ##################
 # 01_ingest_data.R
 ##################
-source("R/01_ingest_data.R")
+source("R/01_input_data.R")
 
 ##################
 # 02_analyses_1.R
