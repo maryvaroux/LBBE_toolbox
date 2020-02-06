@@ -37,8 +37,7 @@ données + méta-données + matériel & méthodes
 
 Un article publié n'est que le sommet de l'iceberg que représente le processus de recherche.
 
-> - <span class="green">Data Management:</span> sauvegarde des données brutes et intermédiaires, tout documenter
-pas, créer des données bien rangées pouvant être analysées
+> - <span class="green">Data Management:</span> sauvegarde des données brutes et intermédiaires, tout documenter, créer des données bien rangées pouvant être analysées
 
 > - <span class="green">Software:</span> écrire, organiser et partager ses scripts et programmes utilisés dans l'analyse
 
@@ -105,11 +104,7 @@ L'environnement logiciel.
 
 <br/>
 
-> - Les packages (version) : packrat (noms des fonction peuvent changer, sauvegarder le package dans la version utilisée)
-
-<br/>
-
-> - Bibliothèques système, de la version de R, de la version de l'OS ?!
+> - Les packages (version) : [packrat](https://bioinfo-fr.net/packrat-ou-comment-gerer-ses-packages-r-par-projet) (noms des fonction peuvent changer, sauvegarder le package dans la version utilisée)
 
 <br/>
 
@@ -125,11 +120,11 @@ D'une manière générale automatiser au maximum
 
 ## <span class="green">Software</span>
 
-> - il existe des outils pour ça (pseudo makefile en R, makefile shell, pipeline toolkits [Remake, Drake])
+> - il existe des outils pour ça (pseudo makefile en R, makefile shell, pipeline toolkits : Remake, [Drake](https://github.com/ropensci/drake))
 
 <br/>
 
-> - Automatiser du script à la rédaction de l'article (Rmarkdown)
+> - Automatiser du script à la rédaction de l'article
 
 <br/>
 
@@ -161,17 +156,11 @@ Utiliser un logiciel de gestion de versions (Git)
 
 <br/>
 
-![](assets/01_open_science/nat_com.png)
-
-## <span class="green">Project Organization</span>
-
-<br/>
-
 > - Research compendium : organisation du répertoire de travail
 
 <br/>
 
-> - Pipeline toolkit (Drake) : gère les dépendances entre données, scripts et résultats (summum de l'Open Science mais nécessite une habitude de coder en fonction)
+> - Pipeline toolkit (Drake) : gère les dépendances entre données, scripts et résultats (summum de l'Open Science mais plus compliqué)
 
 
 ## <span class="green">Manuscripts</span>
@@ -191,7 +180,7 @@ Utiliser la programmation lettrée (literate programming)
 
 Rmarkdown (https://rmarkdown.rstudio.com/)
 
-![](assets/01_open_science/rmarkown.png)
+![](assets/01_open_science/rmarkown.png){width=70%}
 
 ## <span class="green">Manuscripts</span>
 
@@ -247,12 +236,6 @@ Yann Holtz & Conor Healy, 2018
 
 ## Introduction à Git 
 
-https://github.com/ewenme/ghibli
-
-![](https://static.lpnt.fr/images/2018/06/15/15292628lpw-15292773-article-jpg_5326796_980x426.jpg){width=50%}
-
-## Introduction à Git 
-
 Suivre les changements dans un projet : 
 
 > - Collecte de données: <span class="green">"Carnet de laboratoire"</span>
@@ -276,6 +259,12 @@ Quelques définitions :
 > - **Commit**: un instantané du répertoire (une date, un auteur, une description, un commit parenté *t-1*)
 > - **Dossier de travail**: une version des fichiers du référentiel sur votre ordinateur
 > - **Index**: un espace temporaire incluant les modifications à engager
+
+## Introduction à Git 
+
+https://github.com/ewenme/ghibli
+
+![](https://static.lpnt.fr/images/2018/06/15/15292628lpw-15292773-article-jpg_5326796_980x426.jpg){width=50%}
 
 ## Starting with git 
 

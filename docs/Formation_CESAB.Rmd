@@ -4,9 +4,9 @@ title: 'Formation CESAB : Bonnes pratiques pour une recherche reproductible en Ã
 author: "Mary Varoux"
 date: "2 au 6 DÃ©cembre 2019"
 output:
+  word_document: default
   html_document:
     df_print: paged
-  word_document: default
   pdf_document: default
 ---
 
