@@ -35,13 +35,6 @@ n_i_p <- cran_packages[!(cran_packages %in% installed.packages())] # install pac
 
 lapply(n_i_p, install.packages, dependencies = TRUE) # install packages
 
-#NON CRAN packages
-if (!("emo" %in% installed.packages())) {
-  
-  devtools::install_github("hadley/emo")
-  
-}
-
 #Check CRAN packages
 if (sum(unlist(lapply(cran_packages, require, character.only = TRUE))) == length(cran_packages)) {
   
@@ -83,7 +76,7 @@ sapply(1:length(dir_names), function(i) {
   )
 })
 
-cat("\n", emo::ji("folder"), ">>> All folders created !\n")
+cat(">>> All folders created !\n")
 
 #clean temporary variables
 rm(list = c("script_names", "dir_names", "dir_vars", "cran_packages", "n_i_p"))
