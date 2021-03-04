@@ -171,7 +171,7 @@ Utiliser la programmation lettrée (literate programming)
 
 <br/>
 
-<blockquote> au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.
+<blockquote> Au lieu de considérer que notre tâche principale est de dire à un ordinateur ce qu'il doit faire, appliquons-nous plutôt à expliquer à des êtres humains ce que nous voulons que l'ordinateur fasse.
 </blockquote>
 
 <span class="reference">Donald Knuth, années 70</span>
@@ -344,7 +344,7 @@ Organisation et communication pour éviter les conflit de commits
 
 ## Comprendre les branches
 
-https://leargitbranching.js.org/
+https://learngitbranching.js.org/
 
 ## Contrôle de version
 
